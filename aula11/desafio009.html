@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+
+<body>
+    <h1>De onde voçe veio?</h1>
+    Digite de qual pais voce é <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+         function calcular() {
+            var txt = document.querySelector('input#txtvel')
+            var res = document.querySelector('div#res')
+            var txtv = String(txt.value)
+            res.innerHTML = `voce e do pais ${txtv}`
+            if (txtv == 'brasil') {
+                res.innerHTML = `<p>voce é brasileiro</p>`
+            }
+            else{
+                res.innerHTML = `<p>voce é gringo</p>`
+            }
+         }
+    </script>
+</body>
+
+</html>
