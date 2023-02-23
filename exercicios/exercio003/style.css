@@ -11,7 +11,7 @@ header {
 }
 
 div{
-    text-align: center;
+    text-align: /*center */;
     padding: 5px;
 }
 section {
@@ -21,6 +21,10 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 0px 2px 7px;
+}
+select#flista{
+    width: 150px;
+    margin: 10px 0px 0px 10px;
 }
 
 footer {
